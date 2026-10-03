@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="LinguaSmart - aplikasi pembelajaran teks deskripsi: materi, contoh teks, permainan, kuis, tantangan dan evaluasi untuk SMP/MTs kelas VII.">
+<title>LinguaSmart · Belajar Teks Deskripsi</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Ctext x='32' y='45' font-size='30' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ELS%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Lompat ke konten utama</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/beranda">
+      <span class="brand-mark" aria-hidden="true">LS</span>
+      <span class="brand-text">
+        <strong>LinguaSmart</strong>
+        <small>Belajar Teks Deskripsi</small>
+      </span>
+    </a>
+
+    <button class="icon-btn nav-toggle" id="navToggle" type="button"
+            aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mainnav">☰</button>
+
+    <nav class="mainnav" id="mainnav" aria-label="Navigasi utama">
+      <a href="#/beranda" data-nav="beranda">Beranda</a>
+      <a href="#/materi" data-nav="materi">Materi</a>
+      <a href="#/contoh" data-nav="contoh">Contoh Teks</a>
+      <a href="#/permainan" data-nav="permainan">Permainan</a>
+      <a href="#/kuis" data-nav="kuis">Kuis</a>
+      <a href="#/tantangan" data-nav="tantangan">Tantangan</a>
+      <a href="#/evaluasi" data-nav="evaluasi">Evaluasi</a>
+    </nav>
+
+    <div class="topbar-tools">
+      <span class="xp-chip" id="xpChip" title="Poin pengalamanmu">★ 0 XP</span>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Ganti tema terang atau gelap" title="Ganti tema">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="view" tabindex="-1"></main>
+
+<footer class="sitefoot">
+  <p><strong>LinguaSmart</strong> · Media pembelajaran Bahasa Indonesia — Teks Deskripsi (SMP/MTs Kelas VII).</p>
+  <p class="muted">Seluruh progres tersimpan otomatis di peramban ini (localStorage). Aplikasi dapat dipakai tanpa internet.</p>
+</footer>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<div class="modal-root" id="modalRoot" hidden></div>
+
+<script src="js/store.js"></script>
+<script src="js/data.js"></script>
+<script src="js/views-materi.js"></script>
+<script src="js/views-games.js"></script>
+<script src="js/views-kuis.js"></script>
+<script src="js/views-tantangan.js"></script>
+<script src="js/views-evaluasi.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
